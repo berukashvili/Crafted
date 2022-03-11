@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafted</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo/shortcut_icon.png">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/icons/icofont/icofont.min.css">
+    <script src="https://kit.fontawesome.com/08481b203b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__desktop">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <figure class="header__logo">
+                        <svg id="Layer_1" enable-background="new 0 0 511.795 511.795" height="512"
+                            viewBox="0 0 511.795 511.795" width="512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m255.895 363.795c-30.089 0-59.521-10.438-82.877-29.393l-105.022-85.232c-42.525-33.28-42.519-101.475 0-134.75l105.022-85.232c46.584-38.918 119.171-38.916 165.754 0l105.022 85.232c26.838 21.781 38.188 57.396 28.917 90.734-2.96 10.641-13.98 16.871-24.628 13.91-10.642-2.959-16.869-13.985-13.909-24.627 5.004-17.995-1.113-37.212-15.587-48.958l-105.022-85.233c-33.416-27.119-81.924-27.119-115.34 0l-105.022 85.233c-22.928 17.944-22.925 54.692 0 72.633l105.022 85.232c33.358 27.072 81.758 27.12 115.169.138l17.543-14.921c8.413-7.156 21.035-6.139 28.192 2.276 7.156 8.414 6.138 21.036-2.276 28.192l-17.727 15.078c-.117.1-.235.198-.354.295-23.355 18.955-52.788 29.393-82.877 29.393zm82.877 118.607 105.022-85.232c42.525-33.28 42.519-101.475 0-134.75l-105.022-85.232c-46.584-38.918-119.171-38.916-165.754 0l-14.806 12.144c-19.849 17.644 4.202 46.935 25.365 30.928l14.681-12.04c33.417-27.09 81.903-27.082 115.307.027l105.022 85.232c22.928 17.944 22.925 54.692 0 72.633l-105.022 85.232c-33.416 27.119-81.924 27.119-115.34 0l-105.022-85.232c-13.26-10.762-19.602-27.91-16.551-44.751 1.969-10.869-5.246-21.276-16.114-23.245-10.862-1.966-21.275 5.245-23.245 16.114-5.652 31.201 6.112 62.982 30.703 82.94l105.022 85.232c23.355 18.954 52.788 29.393 82.877 29.393s59.522-10.438 82.877-29.393z" />
+                        </svg>
+                    </figure>
+                    <nav class="header__nav">
+                        <ul class="header__nav__list">
+                            <li class="header__nav__item">
+                                <a class="header__nav__item__link" href="#home">HOME</a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a class="header__nav__item__link" href="#about">ABOUT</a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a class="header__nav__item__link" href="#portfolio">PORTFOLIO</a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a class="header__nav__item__link" href="#pricing">PRICE</a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a class="header__nav__item__link" href="#testimonials">TESTIMONIALS</a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a class="header__nav__item__link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__ham-nav">
+                        <span class="header__ham-nav__icon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <nav class="header__nav-mobile">
+                <ul class="header__nav-mobile__list">
+                    <li class="header__nav-mobile__item">
+                        <a class="header__nav-mobile__item__link" href="#home">HOME</a>
+                    </li>
+                    <li class="header__nav-mobile__item">
+                        <a class="header__nav-mobile__item__link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="header__nav-mobile__item">
+                        <a class="header__nav-mobile__item__link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="header__nav-mobile__item">
+                        <a class="header__nav-mobile__item__link" href="#pricing">PRICE</a>
+                    </li>
+                    <li class="header__nav-mobile__item">
+                        <a class="header__nav-mobile__item__link" href="#testimonials">TESTIMONIALS</a>
+                    </li>
+                    <li class="header__nav-mobile__item">
+                        <a class="header__nav-mobile__item__link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__header">
+                        <h1 class="hero__header__title">
+                            We Are Digital Agency!
+                        </h1>
+                        <p class="hero__header__p">
+                            We are a passionate digital design agency that specializes in
+                            beautiful and easy-to-use digital design & web development services.
+                        </p>
+                    </div>
+                    <footer class="hero__footer">
+                        <button class="hero__footer__btn hero__footer__btn--green">GET STARTED</button>
+                        <button class="hero__footer__btn--grey">READ MORE</button>
+                    </footer>
+                </div>
+            </div>
+
+        </section>
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__header">
+                        <h5 class="about__header__subtitle">WHO WE ARE ?</h5>
+                        <h2 class="about__header__title">ABOUT AGENCY</h2>
+                        <p class="about__header__p">
+                            We’re full service which means we’ve got you covered on design and content right through
+                            to
+                            digital. You’ll form a lasting relationship with us, collaboration is central to
+                            everything
+                            we do.
+                        </p>
+                    </div>
+                    <div class="about__features">
+                        <div class="about__features__item">
+                            <span class="about__features__icon">
+                                <i class="icofont-computer"></i>
+                            </span>
+                            <div class="about__features__header">
+                                <h6 class="about__features__title">Web Design</h6>
+                                <p class="about__features__p">
+                                    Te qui alii inermis vivendum, an decore libris eum. Te mel dico alia wisi, cu vitae
+                                    noluisse phaedrum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__features__item">
+                            <span class="about__features__icon">
+                                <i class="icofont-retweet"></i>
+                            </span>
+                            <div class="about__features____header">
+                                <h6 class="about__features__title">Development</h6>
+                                <p class="about__features__p">
+                                    Te qui alii inermis vivendum, an decore libris eum. Te mel dico alia wisi, cu vitae
+                                    noluisse phaedrum.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__features__item">
+                            <span class="about__features__icon">
+                                <i class="icofont-bulb-alt"></i>
+                            </span>
+                            <div class="about__features__header">
+                                <h6 class="about__features__title">Branding</h6>
+                                <p class="about__features__p">
+                                    Te qui alii inermis vivendum, an decore libris eum. Te mel dico alia wisi, cu vitae
+                                    noluisse phaedrum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio__container">
+                <div class="portfolio__wrapper">
+                    <h2 class="portfolio__main-title">OUR PORTFOLIO</h2>
+                    <div class="portfolio__list">
+                        <div class="portfolio__list__item portfolio__item--empty">
+                            <h6 class="portfolio__item__subtitle">CREATIVE PORTFOLIO</h6>
+                            <h4 class="portfolio__item__main-title">WORKS.</h4>
+                        </div>
+                        <div class="portfolio__list__item">
+                            <div class="portfolio__item__content">
+                                <h4 class="portfolio__item__title">UI / UX Design</h4>
+                                <h2 class="portfolio__item__category">Creative Design</h2>
+                            </div>
+                            <figrue class="portfolio__item__bg">
+                                <img src="assets/img/portfolio/1.webp" alt="">
+                            </figrue>
+                        </div>
+                        <div class="portfolio__list__item">
+                            <div class="portfolio__item__content">
+                                <h4 class="portfolio__item__title">UI / UX Design</h4>
+                                <h2 class="portfolio__item__category">Creative Design</h2>
+                            </div>
+                            <figrue class="portfolio__item__bg">
+                                <img src="assets/img/portfolio/2.webp" alt="">
+                            </figrue>
+                        </div>
+                        <div class="portfolio__list__item">
+                            <div class="portfolio__item__content">
+                                <h4 class="portfolio__item__title">UI / UX Design</h4>
+                                <h2 class="portfolio__item__category">Creative Design</h2>
+                            </div>
+                            <figrue class="portfolio__item__bg">
+                                <img src="assets/img/portfolio/3.webp" alt="">
+                            </figrue>
+                        </div>
+                        <div class="portfolio__list__item">
+                            <div class="portfolio__item__content">
+                                <h4 class="portfolio__item__title">UI / UX Design</h4>
+                                <h2 class="portfolio__item__category">Creative Design</h2>
+                            </div>
+                            <figrue class="portfolio__item__bg">
+                                <img src="assets/img/portfolio/4.webp" alt="">
+                            </figrue>
+                        </div>
+                        <div class="portfolio__list__item">
+                            <div class="portfolio__item__content">
+                                <h4 class="portfolio__item__title">UI / UX Design</h4>
+                                <h2 class="portfolio__item__category">Creative Design</h2>
+                            </div>
+                            <figrue class="portfolio__item__bg">
+                                <img src="assets/img/portfolio/5.webp" alt="">
+                            </figrue>
+                        </div>
+                        <div class="portfolio__list__item">
+                            <div class="portfolio__item__content">
+                                <h4 class="portfolio__item__title">UI / UX Design</h4>
+                                <h2 class="portfolio__item__category">Creative Design</h2>
+                            </div>
+                            <figrue class="portfolio__item__bg">
+                                <img src="assets/img/portfolio/6.webp" alt="">
+                            </figrue>
+                        </div>
+                        <div class="portfolio__list__item portfolio__item--empty">
+                            <h5 class="portfolio__item__subtitle--black">LET'S VIEW ALL WORKS</h5>
+                            <a href="#" class="portfolio__item__btn">VIEW ALL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing section-padding" id="pricing">
+            <div class="container">
+                <div class="pricing__wrapper">
+                    <div class="pricing__header">
+                        <h6 class="pricing__subtitle">THE BEST OFFERS</h6>
+                        <h2 class="pricing__title">OUR PRICING</h2>
+                    </div>
+                    <div class="pricing__list">
+                        <div class="pricing__item">
+                            <h6 class="pricing__item__type">Basic</h6>
+                            <h4 class="pricing__item__value">10<span>$</span>
+                            </h4>
+                            <p class="pricing__item__duration">PER OF MONTH</p>
+                            <ul class="pricing__info">
+                                <li class="pricing__info__item">10 GB Disk Space</li>
+                                <li class="pricing__info__item">15 Domain Names</li>
+                                <li class="pricing__info__item">4 Email Address</li>
+                                <li class="pricing__info__item pricing__info__item-lined">Enhanced Security</li>
+                                <li class="pricing__info__item pricing__info__item-lined">Unlimited Support</li>
+                            </ul>
+                            <a class="pricing__item__btn">ORDER NOW </a>
+                        </div>
+                        <div class="pricing__item pricing__item--big">
+                            <h6 class="pricing__item__type">Business</h6>
+                            <h4 class="pricing__item__value">25<span>$</span>
+                            </h4>
+                            <p class="pricing__item__duration">PER OF MONTH</p>
+                            <ul class="pricing__info">
+                                <li class="pricing__info__item">10 GB Disk Space</li>
+                                <li class="pricing__info__item">15 Domain Names</li>
+                                <li class="pricing__info__item">4 Email Address</li>
+                                <li class="pricing__info__item pricing__info__item-lined">Enhanced Security</li>
+                                <li class="pricing__info__item">Unlimited Support</li>
+                            </ul>
+                            <a class="pricing__item__btn">ORDER NOW</a>
+                        </div>
+                        <div class="pricing__item">
+                            <h6 class="pricing__item__type">Premium</h6>
+                            <h4 class="pricing__item__value">50<span>$</span>
+                            </h4>
+                            <p class="pricing__item__duration">PER OF MONTH</p>
+                            <ul class="pricing__info">
+                                <li class="pricing__info__item">10 GB Disk Space</li>
+                                <li class="pricing__info__item">15 Domain Names</li>
+                                <li class="pricing__info__item">4 Email Address</li>
+                                <li class="pricing__info__item">Enhanced Security</li>
+                                <li class="pricing__info__item">Unlimited Support</li>
+                            </ul>
+                            <a class="pricing__item__btn">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials section-padding" id="testimonials">
+            <div class="container">
+                <div class="testimonials__wrapper">
+                    <div class="testimonials__header-wrapper">
+                        <div class="testimonials__header">
+                            <h6 class="testimonials__header__subtitle">Testimonials</h6>
+                            <h2 class="testimonials__header__title">What Peapole Says?</h2>
+                        </div>
+                        <div class="testimonials__control-item">
+                            <button class="testimonials__control-item__left">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="testimonials__control-item__right">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="testimonials__list swiper-wrapper">
+                            <div class="testimonials__item swiper-slide">
+                                <header class="testimonials__item__header">
+                                    <figure class="testimonials__client__bg">
+                                        <img src="assets/img/clients/1.webp" alt="">
+                                    </figure>
+                                    <div class="testimonials__client">
+                                        <h4 class="testimonials__client__name">Alex Smith</h4>
+                                        <h6 class="testimonials__client__info">Envato Customer</h6>
+                                    </div>
+                                </header>
+                                <p class="testimonials__client__review">
+                                    Nulla metus metus ullamcorper vel tincidunt sed
+                                    euismod nibh volutpat velit class
+                                    aptent taciti sociosqu ad litora.
+                                </p>
+                            </div>
+                            <div class="testimonials__item swiper-slide">
+                                <header class="testimonials__item__header">
+                                    <figure class="testimonials__client__bg">
+                                        <img src="assets/img/clients/2.webp" alt="">
+                                    </figure>
+                                    <div class="testimonials__client">
+                                        <h4 class="testimonials__client__name">Alex Smith</h4>
+                                        <h6 class="testimonials__client__info">Envato Customer</h6>
+                                    </div>
+                                </header>
+                                <p class="testimonials__client__review">
+                                    Nulla metus metus ullamcorper vel tincidunt sed
+                                    euismod nibh volutpat velit class
+                                    aptent taciti sociosqu ad litora.
+                                </p>
+                            </div>
+                            <div class="testimonials__item swiper-slide">
+                                <header class="testimonials__item__header">
+                                    <figure class="testimonials__client__bg">
+                                        <img src="assets/img/clients/3.webp" alt="">
+                                    </figure>
+                                    <div class="testimonials__client">
+                                        <h4 class="testimonials__client__name">Alex Smith</h4>
+                                        <h6 class="testimonials__client__info">Envato Customer</h6>
+                                    </div>
+                                </header>
+                                <p class="testimonials__client__review">
+                                    Nulla metus metus ullamcorper vel tincidunt sed
+                                    euismod nibh volutpat velit class
+                                    aptent taciti sociosqu ad litora.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <header class="contact__info__header">
+                            <h6 class="contact__info__header__title">GET IN TOUCH</h6>
+                            <h2 class="contact__info__header__description">
+                                Don’t Hesitate to contact
+                                with us for any information
+                                or inquiries
+                            </h2>
+                        </header>
+                        <div class="contact__info__address">
+                            <h3 class="contact__info__address__region">
+                                New York City , United States Of America.
+                            </h3>
+                            <p class="contact__info__address__street">
+                                650 live woshington - 908 new homepshire ave nw
+                            </p>
+                            <p class="contact__info__address__number">63165370895</p>
+                            <p class="contact__info__address__email">berukashvili@website.com</p>
+                        </div>
+                        <footer class="contact__info__socials">
+                            <ul class="contact__info__socials__list">
+                                <li class="contact__info__socials__item">
+                                    <a class="contact__info__socials__icon" " href=" #">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="contact__info__socials__item">
+                                    <a class="contact__info__socials__icon" " href=" #">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="contact__info__socials__item">
+                                    <a class="contact__info__socials__icon" " href=" #">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li class="contact__info__socials__item">
+                                    <a class="contact__info__socials__icon" " href=" #">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </footer>
+                    </div>
+                    <form class="contact__form">
+                        <div class="contact__form__fields">
+                            <div class="contact__form__fields__wrapper">
+                                <div class=" contact__form__field--small">
+                                    <input class="contact__form__field--small__input" type="text" name="name"
+                                        id="form_name" placeholder="Name *" required:="required"
+                                        data-error="First name is required.">
+                                </div>
+                                <div class=" contact__form__field--small ">
+                                    <input class="contact__form__field--small__input" type="email" name="email"
+                                        id="form_email" placeholder="Email *" required:="required"
+                                        data-error="Valid mail name is required.">
+                                </div>
+                            </div>
+                            <div class="contact__form__field">
+                                <input class="contact__form__field__subject" type="text" name="subject"
+                                    id="form_subject" placeholder="Subject *">
+                            </div>
+                            <div class="contact__form__field__message">
+                                <textarea class="contact__form__field__message__value" name="message" id="form_message"
+                                    placeholder="Your Message *" required="required"
+                                    data-error="Your Message is required" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact__form__btn">
+                            <button type="submit" class="contact__form__btn__message">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__content">
+                    <ul class="footer__socials__list">
+                        <li class="footer__socials__list__item">
+                            <a class="footer__socials__list__icon" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socials__list__item">
+                            <a class="footer__socials__list__icon" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socials__list__item">
+                            <a class="footer__socials__list__icon" href="#">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socials__list__item">
+                            <a class="footer__socials__list__icon" href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer__copyright">
+                        &copy; 2021 BERUKASHVILI. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

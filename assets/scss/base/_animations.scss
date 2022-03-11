@@ -1,0 +1,15 @@
+.header {
+  &.header-sticky {
+    animation: slide 0.5s forwards ease-in-out;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-88px);
+  }
+
+  to {
+    transform: translateY(88px);
+  }
+}

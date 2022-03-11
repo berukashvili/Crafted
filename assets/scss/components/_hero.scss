@@ -1,0 +1,53 @@
+.hero {
+  background-image: url(../img/hero_bg.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -88px;
+
+  @include respond(big) {
+    background-size: auto;
+    background-position: center center;
+  }
+
+  &__wrapper {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__header {
+    @include flex-column;
+    &__title {
+      color: $color-primary-white;
+    }
+
+    &__p {
+      color: $color-primary-white;
+      width: 65%;
+      margin-top: 15px;
+      margin-bottom: 40px;
+      padding: 0 45px;
+
+      @include respond(big) {
+        width: 100%;
+      }
+
+      @include respond(large) {
+        width: 100%;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    background: rgb(21 26 35 / 62%);
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    z-index: 1;
+  }
+}

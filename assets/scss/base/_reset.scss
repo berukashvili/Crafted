@@ -1,0 +1,62 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+
+  @include respond(header-container-small) {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include respond(big) {
+    max-width: 720px;
+  }
+
+  @include respond(large) {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.section-padding {
+  padding: 140px 0;
+}

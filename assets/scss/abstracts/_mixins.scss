@@ -1,0 +1,94 @@
+/* --- LAYOUT SECTION --- */
+@mixin flex-default {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* --- LAYOUT SECTION END --- */
+
+/* --- BUTTONS SECTION END --- */
+@mixin btn-default {
+  color: $color-primary-white;
+  padding: 14px 35px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background: $color-primary-green;
+  transition: 0.3s ease;
+}
+/* --- BUTTONS SECTION END --- */
+
+@mixin btn-hover {
+  background-color: $color-primary-white;
+  border-color: $color-primary-green;
+  color: $color-primary-green;
+  transition: 0.2s ease-in-out;
+}
+
+@mixin slider-btn {
+  color: $color-primary-white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid $color-primary-white;
+  display: none;
+}
+
+/* --- TYPOGRAPHY SECTION --- */
+@mixin font-weight {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@mixin title-default {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@mixin p-about {
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 2;
+}
+/* --- TYPOGRAPHY SECTION --- */
+
+@mixin icons-bg {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* --- MEDIA QUERIES SECTION --- */
+@mixin respond($breakpoint) {
+  @if $breakpoint == header-container-small {
+    @media (min-width: 992px) and (max-width: 1155px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == huge {
+    @media (min-width: 991px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
+/* --- MEDIA QUERIES SECTION END --- */

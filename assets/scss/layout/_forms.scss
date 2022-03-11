@@ -1,0 +1,65 @@
+.contact {
+  &__form {
+    @include flex-column;
+
+    &__fields__wrapper {
+      display: flex;
+
+      @include respond(big) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__fields {
+      @include respond(large) {
+        width: 100%;
+      }
+    }
+
+    &__field--small {
+      width: 340px;
+
+      @include respond(large) {
+        width: 100%;
+      }
+
+      &__input {
+        border: none;
+        outline: none;
+        background-color: $color-gray-dark;
+        padding: 20px 0 20px 15px;
+        width: 100%;
+      }
+      &:not(:last-child) {
+        margin-right: 35px;
+
+        @include respond(large) {
+          margin-bottom: 30px;
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__field {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      &__subject {
+        border: none;
+        outline: none;
+        background-color: $color-gray-dark;
+        width: 100%;
+        padding: 20px 0 20px 15px;
+      }
+
+      &__message {
+        &__value {
+          border: none;
+          outline: none;
+          background-color: $color-gray-dark;
+          width: 100%;
+          padding: 20px 0 20px 15px;
+        }
+      }
+    }
+  }
+}

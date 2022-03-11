@@ -1,0 +1,263 @@
+/* --- HEADER SECTION --- */
+.header {
+  &__ham-nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    z-index: 4;
+
+    @include respond(big) {
+      display: flex;
+    }
+
+    &__icon {
+      display: none;
+      width: 23px;
+      height: 3px;
+      background: $color-primary-white;
+      transition: 0.25s ease-in-out;
+      border-radius: 10px;
+
+      @include respond(big) {
+        display: inline;
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 3px;
+        background-color: $color-primary-white;
+        border-radius: 10px;
+        transition: 0.4s ease-in-out;
+      }
+
+      &:before {
+        transform: translateY(-7px);
+      }
+
+      &:after {
+        transform: translateY(7px);
+      }
+    }
+    &__open {
+      .header__ham-nav__icon {
+        background: transparent;
+
+        &:before {
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+/* --- HEADER MENU ICON SECTION END --- */
+
+/* --- HERO SECTION --- */
+.hero {
+  &__footer__btn {
+    @include btn-default;
+    margin: 0 10px;
+
+    @include respond(large) {
+      margin-bottom: 20px;
+    }
+  }
+  &__footer__btn--green {
+    background-color: $color-primary-green;
+
+    @include respond(huge) {
+      &:hover {
+        color: $color-primary-green;
+      }
+
+      @include respond(huge) {
+        &:hover {
+          border-color: $color-primary-green;
+          background-color: $color-primary-white;
+          color: $color-primary-green;
+        }
+      }
+    }
+  }
+  &__footer__btn--grey {
+    color: $color-primary-white;
+    padding: 14px 35px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background: $color-gray-transparent;
+    transition: 0.3s;
+
+    @include respond(huge) {
+      &:hover {
+        background-color: $color-primary-green;
+      }
+    }
+  }
+}
+/* --- HERO SECTION END --- */
+
+/* --- PORTFOLIO SECTION --- */
+.portfolio {
+  &__item {
+    &__btn {
+      margin-top: 20px;
+      @include btn-default;
+
+      @include respond(huge) {
+        &:hover {
+          @include btn-hover;
+        }
+      }
+    }
+  }
+}
+/* --- PORTFOLIO SECTION END --- */
+
+/* --- PRICING SECTION --- */
+.pricing {
+  &__item {
+    &__btn {
+      @include btn-default;
+      @include font-weight;
+      font-size: 12px;
+
+      @include respond(huge) {
+        &:hover {
+          @include btn-hover;
+        }
+      }
+    }
+  }
+}
+/* --- PRICING SECTION END --- */
+
+/* --- TESTIMONIALS SECTION --- */
+.testimonials {
+  &__control-item {
+    &__left {
+      @include slider-btn;
+      margin: 0 15px 0 0;
+
+      @include respond(huge) {
+        display: inline;
+
+        &:hover {
+          background-color: $color-primary-green;
+          color: $color-primary-white;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+
+    &__right {
+      @include slider-btn;
+
+      @include respond(huge) {
+        display: inline;
+
+        &:hover {
+          background-color: $color-primary-green;
+          color: $color-primary-white;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+/* --- TESTIMONIALS SECTION  END --- */
+
+.contact {
+  &__info {
+    &__socials {
+      &__list {
+        display: flex;
+      }
+
+      &__item {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+
+      &__icon {
+        @include icons-bg;
+        color: $color-primary-green;
+        width: 40px;
+        height: 40px;
+        background-color: $color-gray-dark;
+        margin-right: 10px;
+
+        @include respond(huge) {
+          &:hover {
+            color: $color-primary-white;
+            background-color: $color-primary-green;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  &__form {
+    &__btn {
+      margin-top: 30px;
+
+      & &__message {
+        @include btn-default;
+
+        @include respond(huge) {
+          &:hover {
+            color: $color-primary-green;
+            background-color: $color-primary-white;
+            border-color: $color-primary-green;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* --- FOOTER SECTION --- */
+.footer {
+  &__socials {
+    &__list {
+      @include flex-default;
+
+      &__item {
+        margin-bottom: 15px;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+
+      &__icon {
+        @include icons-bg;
+        color: $color-primary-white;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: $color-gray-transparent;
+
+        @include respond(huge) {
+          &:hover {
+            background-color: $color-primary-green;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+/* --- FOOTER SECTION END --- */

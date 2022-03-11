@@ -1,0 +1,300 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+/* --- HEADER SECTION --- */
+.header {
+  &__nav {
+    &__item {
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 2px;
+
+      @include respond(big) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__nav-mobile {
+    &__item {
+      &__link {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+/* --- HEADER SECTION END --- */
+
+/* --- HERO SECTION --- */
+.hero {
+  &__header {
+    &__title {
+      font-size: 55px;
+      font-weight: 700;
+
+      @include respond(large) {
+        font-size: 25px;
+      }
+    }
+
+    &__p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 2;
+
+      @include respond(large) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__footer {
+    &__btn {
+      @include font-weight;
+      font-size: 12px;
+
+      &--grey {
+        @include font-weight;
+        font-size: 12px;
+      }
+    }
+  }
+}
+/* --- HERO SECTION END --- */
+
+/* --- ABOUT SECTION --- */
+.about {
+  &__header {
+    &__subtitle {
+      @include font-weight;
+      font-size: 14px;
+    }
+
+    &__title {
+      @include title-default;
+
+      @include respond(large) {
+        font-size: 35px;
+      }
+    }
+
+    &__p {
+      @include p-about;
+    }
+  }
+
+  &__item {
+    &__icon {
+      font-size: 40px;
+      line-height: 75px;
+    }
+  }
+
+  &__features {
+    &__icon {
+      font-size: 40px;
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__p {
+      @include p-about;
+    }
+  }
+}
+/* --- ABOUT SECTION END --- */
+
+/* --- PORTFOLIO SECTION --- */
+.portfolio {
+  &__main-title {
+    @include title-default;
+  }
+
+  &__item {
+    &__title {
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    &__category {
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    &__subtitle {
+      @include font-weight;
+      font-size: 14px;
+    }
+
+    &__subtitle--black {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    &__main-title {
+      @include title-default;
+    }
+  }
+
+  &__item__btn {
+    @include font-weight;
+    font-size: 12px;
+  }
+}
+/* --- PORTFOLIO SECTION END --- */
+
+/* --- PRICING SECTION --- */
+.pricing {
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    @include title-default;
+  }
+
+  &__item {
+    &__duration {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    &__type {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    &__value {
+      font-size: 65px;
+      font-weight: 700;
+    }
+
+    &__value span {
+      font-size: 15px;
+      font-weight: 700;
+
+      &__btn {
+        @include font-weight;
+        font-size: 12px;
+      }
+    }
+  }
+  &__info {
+    &__item {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+/* --- PRICING SECTION END --- */
+
+/* --- TESTIMONIALS SECTION --- */
+.testimonials {
+  &__header {
+    &__subtitle {
+      @include font-weight;
+      font-size: 14px;
+    }
+
+    &__title {
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+
+  &__client {
+    &__name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &__info {
+      font-size: 12px;
+    }
+
+    &__review {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 2;
+    }
+  }
+}
+/* --- TESTIMONIALS SECTION END --- */
+
+/* --- CONTACT SECTION --- */
+.contact {
+  &__info {
+    &__header {
+      &__title {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      &__description {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+
+    &__address {
+      &__region {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      &__street {
+        font-size: 14.5px;
+        font-weight: 400;
+      }
+
+      &__number {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      &__email {
+        font-size: 14.5px;
+        font-weight: 400;
+      }
+    }
+
+    &__socials {
+      &__icon {
+        font-size: 14px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &__form {
+    &__btn {
+      &__message {
+        @include font-weight;
+        font-size: 12px;
+      }
+    }
+  }
+}
+/* --- CONTACT SECTION END --- */
+
+/* --- FOOTER SECTION --- */
+.footer {
+  &__copyright {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    @include respond(large) {
+      font-size: 11px;
+    }
+  }
+}
+/* --- FOOTER SECTION END --- */

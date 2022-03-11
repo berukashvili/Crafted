@@ -1,0 +1,61 @@
+.contact {
+  background-color: $color-gray-transparent;
+  &__wrapper {
+    padding: 100px 0;
+    display: flex;
+
+    @include respond(big) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    @include respond(header-container-small) {
+      width: 50%;
+    }
+
+    @include respond(big) {
+      margin-bottom: 55px;
+    }
+    &__header {
+      margin-bottom: 15px;
+
+      &__title {
+        color: $color-primary-green;
+        margin-bottom: 15px;
+      }
+
+      &__description {
+        width: 60%;
+
+        @include respond(big) {
+          width: 100%;
+        }
+
+        @include respond(large) {
+          width: 80%;
+        }
+      }
+    }
+    &__address {
+      &__region {
+        color: $color-primary-gray;
+      }
+
+      &__street {
+        color: $color-primary-gray;
+      }
+
+      &__number {
+        color: $color-primary-green;
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      &__email {
+        color: $color-primary-gray;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

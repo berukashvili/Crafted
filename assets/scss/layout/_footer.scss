@@ -1,0 +1,11 @@
+.footer {
+  background-color: $color-footer-bg;
+  padding: 100px 0;
+  &__wrapper {
+    @include flex-column;
+  }
+
+  &__copyright {
+    color: $color-primary-gray;
+  }
+}

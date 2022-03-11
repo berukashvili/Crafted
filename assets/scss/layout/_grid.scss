@@ -1,0 +1,16 @@
+.portfolio {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 340px);
+
+    @include respond(big) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(large) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 340px);
+    }
+  }
+}
